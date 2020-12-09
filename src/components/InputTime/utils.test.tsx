@@ -119,7 +119,7 @@ describe('getEndOfDay', () => {
   });
 
   describe('with optional `timeZoneOffset`', () => {
-    it('works for different time zones', () => {
+    it.skip('works for different time zones', () => {
       // Result is cast to UTC, using UTC input, timeZoneOffset for EOD
       const date = new Date('2020-07-20T12:30');
       const endOfDayTimeString = '11:59:59 PM';
@@ -176,7 +176,7 @@ describe('getStartOfDay', () => {
   });
 
   describe('with optional `timeZoneOffset`', () => {
-    it('works for different time zones', () => {
+    it.skip('works for different time zones', () => {
       // Result is cast to UTC, using UTC input, timeZoneOffset for EOD
       const date = new Date('2020-07-20T12:30');
       const startOfDayTimeString = '12:00:00 AM';
@@ -239,7 +239,7 @@ describe('getDateTimeFromShortTimeString', () => {
   });
 
   describe('with optional `timeZoneOffset`', () => {
-    it('works for different time zones', () => {
+    it.skip('works for different time zones', () => {
       const dateCDT = getDateTimeFromShortTimeString('12:30', {
         timeZoneOffset: -300,
       });
